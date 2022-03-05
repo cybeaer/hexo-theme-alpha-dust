@@ -1,6 +1,11 @@
 <header>
     <div class="logo">
         <a href="<%- config.root %>"><i class="logo-icon fa <%- logoIcon ? logoIcon : theme.fa_logo %>" aria-hidden="true"></i></a>
+        <br><br>
+        <div id="site_search" class="main-content-wrap">
+          <input type="text" id="local-search-input" name="q" results="0" placeholder="search..." class="form-control input--xlarge" autofocus="autofocus"/>
+          <div id="local-search-result"></div>
+        </div>
         <% if(headerTitle) { %>
             <h1 id="main-title" class="title"><%- headerTitle %></h1>
         <% } %>

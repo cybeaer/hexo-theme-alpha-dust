@@ -28,6 +28,7 @@ This theme was developed from scratch by myself just for fun. It is a glowy futu
 - Only one category per post
 - Stylus CSS preprocessor
 - ejs HTML templates
+- Searchbox (json format hexo-generator-search)
 
 ## External libraries used
 
