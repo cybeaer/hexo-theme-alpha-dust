@@ -1,6 +1,5 @@
 var searchFunc = function (path, search_id, content_id) {
     'use strict';
-    console.log('Seaerch')
     $.ajax({
         url: path,
         dataType: "json",
@@ -22,7 +21,6 @@ var searchFunc = function (path, search_id, content_id) {
                 var str = '<ul class=\"search-result-list\">';
                 if(this.value.trim().length < 3 ) return;
                 var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                console.log(keywords)
                 $resultContent.innerHTML = "";
                 if (this.value.trim().length <= 0) {
                     return;
